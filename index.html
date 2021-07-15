@@ -1,38 +1,30 @@
-<!DOCTYPE html>
-
-<html lang-en>
+<!DOCTYPE html>
+<html>
 <head>
-  <title>Laura's Form</title>
+  <title>Stephen'f Form</title>
 </head>
-
 <body>
-<h1>Laura's Sample Form</h1>
+<h1>Stephen's Sample Form</h1>
+<p>This is hosted with GitHub Pages and will triger a clent email to send a message with the content of the form. <br> This form is hard coded to use my email to send.</p>
+<h2>Send me todays GitHub URL.</h2>
 
-<p>This is hosted with GitHub Pages and will trigger a client email to send a message with the content of the form. <br>
-     This form is hard coded to use my email to send.</p>
+<form action="mailto:stephen.franks@nscc.ca?subject=From%20our%20Website" 
+method="post" enctype="text/plain">
 
-<h2>Send me today's GitHub URL.</h2>
-
-<form action="mailto:laura.franks@nscc.ca?subject=From%20our%20Website" method="post" enctype="text/plain">
-
-  <br>  
-    E-mail:<br>
-    <input type="email" name="mail" required="required"><br>
-
-    Your First and Last Name:<br>
-    <input type="text" name="YourName" minlength="5" required="required" size="50"><br>
-
-    Enter your GitHub URL here:<br>
-    <input type="url" id="url" name="url" required="required"><br>
-
-    <label for="TDate">Today's Date:</label>
-    <input type="date" id="TDate" name="TDate" required="required">
-
-  <br>
-
-    <input type="submit" value="Send">
-    <input type="reset" value="Reset">
-
+  <br>  
+  
+    E-mail:<br>
+    <input type="email" name="mail" required="required"><br>
+    Your first and Last Name:<br>
+    <input type="text" name="YourName" minlength="5" required="required" size="50"><br>
+    Enter your GitHub URL here:<br>
+    <input type="url" id="url" name="url" required="required"><br>
+    <label for="TDate">Today's Date:</label>
+    <input type="date" id="TDate" name="TDate" required="required">
+    <br>
+    <input type="submit" value="Send">
+    <input type="reset" value="Reset">
+</form>
 </form>
 </body>
 </html>
