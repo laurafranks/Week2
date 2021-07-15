@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Laura's Form</title>
+  <title>Laura Franks</title>
 </head>
 <body>
 <h1>Laura's Sample Form</h1>
-<p>This is hosted with GitHub Pages and will trigger a client email to send a message with the content of the form. <br> This form is hard coded to use my email to send.</p>
+<p>This is hosted with GitHub Pages and will trigger a client email to send a message with the content of the form. <br>This form is hard coded to use my email to send.</p>
 <h2>Send me todays GitHub URL.</h2>
 
 <form action="mailto:laura.franks@nscc.ca?subject=From%20our%20Website" method="post" enctype="text/plain">
-
-  <br>  
+  <br>
   
-    E-mail:<br>
-    <input type="email" name="mail" required><br>
-    Your first and Last Name:<br>
-    <input type="text" name="YourName" minlength="5" size="50" required><br>
-    Enter your GitHub URL here:<br>
-    <input type="url" id="url" name="url" required><br>
-    <label for="TDate">Today's Date:</label>
-    <input type="date" id="TDate" name="TDate" required>
-    <br>
-    <input type="submit" value="Send">
-    <input type="reset" value="Reset">
-</form>
+  <label for="email">E-mail:  </label>
+  <input type="email" id="email" name="email" required><br>
+  <br>
+  <label for="yourname">Your first and Last Name:  </label>
+  <input type="text" id="yourname" name="yourname" min="5" size="50" required><br>
+  <br>
+  <label for="url">Enter your GitHub URL here:  </label>
+  <input type="url" id="url" name="url" required><br>
+  <br>
+  <label for="tdate">Today's Date:  </label>
+  <input type="date" id="TDate" name="TDate" required>
+  <br>
+  <input type="submit" value="Send">
+  <input type="reset" value="Reset">
 </form>
 </body>
 </html>
